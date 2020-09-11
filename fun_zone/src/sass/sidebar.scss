@@ -1,0 +1,30 @@
+.side-bar{
+    height: 100%;
+    width: 70%;
+    max-width: 400px;
+    background: #ffffff;
+    box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+
+    a{
+        color: #006ace;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    li{
+        margin: 0.5rem 0;
+    }
+
+    ul{
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

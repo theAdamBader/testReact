@@ -1,0 +1,49 @@
+.nav-bar{
+    width: 100%;
+    position: fixed;
+    padding: 20px 0;
+    background: #006ace;
+}
+
+.navigation{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.nav-items{
+    a{
+        color: white;
+        text-decoration: none;
+
+        &:hover{
+            color: yellowgreen;
+        }
+    }
+
+    li{
+        padding: 0 0.5rem;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.nav-space{
+    flex: 1;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 780px){
+    .nav-items{display: none;}
+}
