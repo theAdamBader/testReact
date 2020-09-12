@@ -1,23 +1,25 @@
 #hamburger-toggle {
     opacity: 0;
-}
 
-#hamburger-toggle:checked ~ .hamburger-btn > span {
-    transform: rotate(45deg);
-}
-#hamburger-toggle:checked ~ .hamburger-btn > span::before {
-    top: 0;
-    transform: rotate(0);
-}
 
-#hamburger-toggle:checked ~ .hamburger-btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
+    &:checked ~ .hamburger-btn > span {
+        transform: rotate(45deg);
+    }
+    &:checked ~ .hamburger-btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
 
-#hamburger-toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
+    &:checked ~ .hamburger-btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    &:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
 }
 
 .hamburger-btn {

@@ -2,8 +2,13 @@ import React from "react";
 import "./sidebar.css";
 
 const sideBar = props => {
+  let sideBarNav = 'side-bar';
+  if (props.show){
+    sideBarNav = 'side-bar open';
+  }
+
   return (
-    <nav className="side-bar">
+    <nav className={sideBarNav}>
         <ul>
             <li><a href="/">HOME</a></li>
             <li><a href="/">ACTOR</a></li>

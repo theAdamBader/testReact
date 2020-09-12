@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './components/nav_bar/navbar';
 import Sidebar from './components/sidebar/sidebar';
+import './css/img.css'
 
 class App extends Component {
   state = {
@@ -14,18 +15,17 @@ class App extends Component {
   };
 
   render(){
-    let sideNavBar;
-
-    if(this.state.sidebarOpen){ 
-      sideNavBar = <Sidebar />
-    }
-
     return(
       <div style = {{height: '100%'}}>
         
         <Navigation sideNavHandler = {this.sidebarToggleClickHandler} />
 
-        {sideNavBar}
+        <Sidebar show = {this.state.sidebarOpen} />
+        
+        <img src={require('./img/pic.jpg')} alt = "" id = "images" />
+
+        <p>HELLO WORLD</p>
+
         
       </div>
     );
