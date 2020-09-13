@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navigation from './components/nav_bar/navbar';
 import Sidebar from './components/sidebar/sidebar';
+import About from './components/about/about';
+import Sliding from './components/swiper/swiper';
 import './css/img.css'
 
 class App extends Component {
@@ -24,8 +26,9 @@ class App extends Component {
         
         <img src={require('./img/pic.jpg')} alt = "" id = "images" />
 
-        <p>HELLO WORLD</p>
+        <About />
 
+        <Sliding />
         
       </div>
     );
