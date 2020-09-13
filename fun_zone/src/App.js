@@ -3,6 +3,7 @@ import Navigation from './components/nav_bar/navbar';
 import Sidebar from './components/sidebar/sidebar';
 import About from './components/about/about';
 import Sliding from './components/swiper/swiper';
+import Contact from './components/contact/contact'
 import './css/img.css'
 
 class App extends Component {
@@ -29,6 +30,8 @@ class App extends Component {
         <About />
 
         <Sliding />
+
+        <Contact />
         
       </div>
     );
