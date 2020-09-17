@@ -5,7 +5,7 @@ const hamburgerButton = props => (
     <div>
         <input id="hamburger-toggle" type="checkbox" />
 
-        <label onClick = {props.click} class="hamburger-btn" for="hamburger-toggle">
+        <label onClick = {props.click} className="hamburger-btn" htmlFor="hamburger-toggle">
             <span />
         </label>
     </div>

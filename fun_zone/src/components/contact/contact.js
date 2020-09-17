@@ -24,14 +24,14 @@ class Form extends Component {
     
         // get a callback when the server responds
         xhr.addEventListener('load', () => {
-            // update the response state and the step
-            
+            // update the response state and the step        
             this.setState ({
                 emailStatus: xhr.responseText
             });
         });
+
         // open the request with the verb and the url
-        xhr.open('GET', 'http://api.ruvictor.com/sendemail/index.php?sendto=' + email + 
+        xhr.open('GET', 'http://ec2-3-10-164-70.eu-west-2.compute.amazonaws.com/home/ubuntu/index.php?sendto=' + email + 
                                 '&name=' + name + 
                                 '&message=' + message);
         // send the request
