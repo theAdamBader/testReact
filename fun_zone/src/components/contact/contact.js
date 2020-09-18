@@ -31,7 +31,7 @@ class Form extends Component {
         });
 
         // open the request with the verb and the url
-        xhr.open('GET', 'http://ec2-3-10-164-70.eu-west-2.compute.amazonaws.com/home/ubuntu/index.php?sendto=' + email + 
+        xhr.open('GET', 'https://r0q4j87ji.execute-api.eu-west-2.amazonaws.com/default/contact-form/index.php?sendto=' + email + 
                                 '&name=' + name + 
                                 '&message=' + message);
         // send the request
